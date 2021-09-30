@@ -8,26 +8,41 @@
 
     <TextView
         android:id="@+id/tvMain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_width="111dp"
+        android:layout_height="60dp"
+        android:text="Sup m8!"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.784"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintVertical_bias="0.451" />
 
     <Button
         android:id="@+id/btnChangeText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Change label text"
+        android:layout_width="213dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
         android:onClick="onBtnChangeTextClick"
-        app:layout_constraintEnd_toStartOf="@+id/tvMain"
-        app:layout_constraintHorizontal_bias="0.446"
+        android:text="Change label text"
+        app:layout_constraintBottom_toTopOf="@+id/tvMain"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.503" />
+
+    <Button
+        android:id="@+id/btnChangeColor"
+        android:layout_width="210dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="64dp"
+        android:onClick="onBtnChangeColorClick"
+        android:text="Change text color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMain" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

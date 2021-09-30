@@ -2,6 +2,7 @@ package com.example.test111;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -21,5 +22,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void onBtnChangeTextClick(View view) {
         this.tvMain.setText("Text was changed!");
+    }
+    public void onBtnChangeColorClick(View view){
+        this.tvMain.setTextColor(Color.GREEN);
+
+
     }
 }
